@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2f6b3a">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <title>HDW Aggregator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>HDW Aggregator</h1>
+      <small>v0.1 prototype</small>
+    </div>
+    <button id="langBtn" type="button">EN | हिन्दी</button>
+  </header>
+
+  <main>
+    <section id="netBox">
+      <span id="netStatus"></span>
+      <label><input type="checkbox" id="offlineToggle"> <span id="offlineLabel"></span></label>
+    </section>
+
+    <section>
+      <h2 id="formTitle"></h2>
+      <form id="form">
+        <label><span id="lblFarmer"></span>
+          <select id="farmer">
+            <option>FRM-GWL-0142 - Ramkishan Kushwah</option>
+            <option>FRM-GWL-0187 - Sunita Bai</option>
+            <option>FRM-DBR-0063 - Mahesh Gurjar</option>
+          </select>
+        </label>
+        <label><span id="lblCrop"></span>
+          <select id="crop">
+            <option value="Tomato">Tomato</option>
+            <option value="Onion">Onion</option>
+            <option value="Potato">Potato</option>
+          </select>
+        </label>
+        <label><span id="lblWeight"></span>
+          <input type="number" id="weight" min="1" inputmode="numeric" placeholder="500">
+        </label>
+        <label><span id="lblTime"></span>
+          <input type="datetime-local" id="time">
+        </label>
+        <button type="submit" id="saveBtn"></button>
+        <p id="msg"></p>
+      </form>
+    </section>
+
+    <section>
+      <h2 id="queueTitle"></h2>
+      <div id="bar" hidden><div id="barFill"></div></div>
+      <ul id="queue"></ul>
+      <button id="clearBtn" type="button" class="small"></button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

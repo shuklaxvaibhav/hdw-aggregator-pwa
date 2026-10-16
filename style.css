@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f3f3ee; color: #222; max-width: 480px; margin: 0 auto; }
+header { background: #2f6b3a; color: #fff; padding: 12px 14px; display: flex; justify-content: space-between; align-items: center; }
+header h1 { margin: 0; font-size: 18px; }
+header small { opacity: .75; }
+header button { background: #fff; color: #2f6b3a; border: 0; padding: 6px 10px; border-radius: 4px; font-weight: bold; }
+main { padding: 12px; }
+section { background: #fff; border: 1px solid #ccc; padding: 12px; margin-bottom: 12px; }
+h2 { font-size: 15px; margin: 0 0 10px; }
+label { display: block; margin-bottom: 10px; font-size: 13px; }
+select, input[type=number], input[type=datetime-local] { width: 100%; padding: 8px; margin-top: 3px; border: 1px solid #999; font-size: 15px; background: #fff; }
+#saveBtn { width: 100%; background: #2f6b3a; color: #fff; border: 0; padding: 12px; font-size: 16px; }
+#netBox { display: flex; justify-content: space-between; align-items: center; font-size: 13px; }
+#netBox label { margin: 0; }
+#netStatus { font-weight: bold; }
+.on { color: #2f6b3a; }
+.off { color: #b45f06; }
+#msg { font-size: 12px; color: #b00; margin: 8px 0 0; min-height: 14px; }
+ul { list-style: none; padding: 0; margin: 0; }
+li { border-bottom: 1px solid #ddd; padding: 8px 0; font-size: 13px; display: flex; justify-content: space-between; gap: 8px; }
+li small { color: #777; display: block; font-family: monospace; }
+.pending { color: #888; }
+.synced { color: #2f6b3a; }
+#bar { height: 8px; background: #ddd; margin-bottom: 8px; }
+#barFill { height: 100%; width: 0; background: #2f6b3a; transition: width .2s; }
+.small { margin-top: 10px; font-size: 12px; background: none; border: 1px solid #999; padding: 4px 8px; }
