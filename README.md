@@ -1,4 +1,5 @@
 # HDW Aggregator (prototype v0.1)
+Live demo: https://shuklaxvaibhav.github.io/hdw-aggregator-pwa/
 
 First prototype for **The Harvest Decision Window** - AI Synergy Hackathon, Round 1, Case 02 (Agriculture).
 
@@ -31,7 +32,8 @@ On a phone: deploy to GitHub Pages, open the link in Chrome, then "Add to Home s
 
 ## What is fake or missing (TODO)
 
-- [ ] Sync is mocked. `MOCK_SYNC = true` in `app.js`. Set it to `false` once the FastAPI endpoint exists
+- - [ ] Offline loading is implemented but still being tested on real devices
+    [ ] Sync is mocked. `MOCK_SYNC = true` in `app.js`. Set it to `false` once the FastAPI endpoint exists
 - [ ] Outbox uses localStorage. Move to IndexedDB or SQLite
 - [ ] Farmer list is hardcoded
 - [ ] No login, no duplicate protection on the server side
@@ -51,4 +53,5 @@ icons/       app icons
 
 ## Team
 
-Add your names here.
+vaibhav shukla
+rudrakshi sharma
